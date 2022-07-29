@@ -147,6 +147,19 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                 AVMetadataObject.ObjectType.upce,
                 AVMetadataObject.ObjectType.ean13,
                 AVMetadataObject.ObjectType.ean8,
+//                AVMetadataObject.ObjectType.codabar,
+                AVMetadataObject.ObjectType.pdf417,
+//                AVMetadataObject.ObjectType.gs1DataBar,
+//                AVMetadataObject.ObjectType.gs1DataBarLimited,
+//                AVMetadataObject.ObjectType.gs1DataBarExpanded,
+                AVMetadataObject.ObjectType.aztec,
+                AVMetadataObject.ObjectType.itf14,
+//                AVMetadataObject.ObjectType.microQR,
+                AVMetadataObject.ObjectType.code39,
+                AVMetadataObject.ObjectType.code39Mod43,
+                AVMetadataObject.ObjectType.code128,
+                AVMetadataObject.ObjectType.interleaved2of5,
+//                AVMetadataObject.ObjectType.microPDF417,
             ]
             
             // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer.
