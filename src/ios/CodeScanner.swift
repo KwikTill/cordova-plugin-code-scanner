@@ -109,13 +109,15 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         closeButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         closeButton.frame = CGRect(
             x: (screenRect.width - buttonLengthWidth) / 2,
-            y: screenRect.height - buttonLengthWidth - 20,
+            y: screenRect.height - buttonLengthWidth - 50,
             width: buttonLengthWidth,
             height: buttonLengthWidth
         )
         
         closeButton.layer.cornerRadius = buttonLengthWidth / 2
         closeButton.addTarget(self, action: #selector(closeButtonClicked), for: .touchUpInside);
+
+        self.view.addSubview(closeButton);
 
         // Do any additional setup after loading the view.
         // Get the back-facing camera for capturing videos
